@@ -1,14 +1,11 @@
 a {color: white}
 a:hover {color: teal}
 body {
-    background-image: url("iceberg.jpg");
+background-color: lightblue;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-position: right below;
 }
 
-
-background-repeat: no-repeat;
-background-size: auto;
 
 .color-info
 li
