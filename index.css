@@ -1,11 +1,13 @@
 a {color: white}
 a:hover {color: teal}
 
+background-repeat: no-repeat;
+background-size: auto;
+
 .color-info
 li
 {
   color: blue;
-
 }
 
 .color-info
