@@ -1,41 +1,7 @@
 a {color: white}
 a:hover {color: teal}
 body {
-background-color: lightblue;
+background-color: green;
     background-repeat: no-repeat;
     background-position: right below;
 }
-
-.color-info
-li
-{
-  color: blue;
-}
-
-.color-info
-{
-  border-style: solid;
-}
-
-
-.color-info2
-li
-{
-  color: orange;
-}
-
-
-.color-info2
- {
-  border-style: solid;
-}
-
-.colour_me{
-  font-size: 16px;
-}
-
-.important
-  {
-    font-weight: bold;
-    font-size: 16px;
-  }
