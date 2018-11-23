@@ -121,4 +121,7 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
+    }
+
+    .savepenguins
+      img {border-radius: 8px;}
