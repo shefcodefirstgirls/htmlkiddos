@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: purple;
+    background-color: powderblue;
    }
 
 li {
@@ -12,14 +12,14 @@ li {
 
    li a, .dropbtn {
        display: inline-block;
-       color: white;
+       color: blue;
        text-align: center;
        padding: 14px 16px;
        text-decoration: none;
    }
 
    li a:hover, .dropdown:hover .dropbtn {
-       background-color: red;
+       background-color: pink;
    }
 
    li.dropdown {
@@ -48,7 +48,7 @@ li {
    .dropdown:hover .dropdown-content {
        display: block;}
 
-      .fa
+    .fa
        {
         float:right;
         padding: 15px;
@@ -93,3 +93,32 @@ li {
             background: #FF00FF;
             color: white;
        }
+
+/* create three equal columns */
+       .column {
+           float: left;
+           width: 33.33%;
+       }
+
+/* Clear floats after the columns */
+     .row:after {
+         content: "";
+         display: table;
+         clear: both;
+     }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+             width: 100%;
+         }
+     }
+     img {
+         border-radius: 50%;
+     }
+     .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
