@@ -129,7 +129,28 @@ li {
     .savepenguins
       img {border-radius: 8px;}
 
+/*-- for spacing --*/
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 /*-- for fun fact gif --*/
+.row1 {
+  margin-bottom: 20px;
+}
+.row1 .row1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+
       .fun_fact{
             position: relative;
             width: 33.333%;

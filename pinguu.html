@@ -1,37 +1,67 @@
-<!Doctype html>
-<html>
-<head>
-  <title> pwetty penguin </title>
-  <link rel="stylesheet" href="index.css" />
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title> pwetty penguin </title>
+
+    <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
 <body>
-<body style="background-color:white;">
+  <body style="background-color:white;">
 <!-- navigation bar -->
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Facts</a>
-    <div class="dropdown-content">
-      <a href="#ff">Fun Facts</a>
-      <a href="#st">Sad Truth</a>
-      <a href="#cu">Cheer Up</a>
-      <a href="#hop">Help our penguins</a>
-    </div>
-  </li>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-snapchat"></a>
-    <a href="#" class="fa fa-pinterest"></a>
-    <a href="#" class="fa fa-instagram"></a>
-</ul>
-
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Facts</a>
+        <div class="dropdown-content">
+          <a href="#ff">Fun Facts</a>
+          <a href="#st">Sad Truth</a>
+          <a href="#cu">Cheer Up</a>
+          <a href="#hop">Help our penguins</a>
+        </div>
+    </li>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-snapchat"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-instagram"></a>
+  </ul>
+<hr>
 <!-- for fun facts -->
+<div class="row1">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+
+  <div id="ff">
+    <h1 style="font-family:courier;">Fun facts!!</h1>
+      <ol type="1">
+          <li>They are the fastest swimming bird, but they cant fly</li>
+          <li>Most penguins live near the sea, but migrate inland to have babies. Male and female penguins take turns sitting on the eggs and taking care of the babies.Male emperor penguins gather together during the winter to protect the eggs. They place the eggs on their feet and huddle over them to keep them warm. They sit in one place for over two months until the eggs hatch. Then the females return to take care of the hatchlings</li>
+          <li>The male Adelies penguins give females rocks as gifts.</li>
+      </ol>
+  </div><hr>
+
+<!-- for fun facts gif -->
 <div class="fun_fact">
   <img src="swim.gif" alt="Penguin swim" class="gif">
     <div class="middle1">
@@ -50,17 +80,6 @@
       <div class="text1">For you, my love</div>
     </div>
 </div>
-  <div id="ff">
-    <h1 style="font-family:courier;">Fun facts!!</h1>
-      <ol type="1">
-          <li>They are the fastest swimming bird, but they cant fly</li>
-          <li>Most penguins live near the sea, but migrate inland to have babies. Male and female penguins take turns sitting on the eggs and taking care of the babies.Male emperor penguins gather together during the winter to protect the eggs. They place the eggs on their feet and huddle over them to keep them warm. They sit in one place for over two months until the eggs hatch. Then the females return to take care of the hatchlings</li>
-          <li>The male Adelies penguins give females rocks as gifts.</li>
-      </ol>
-  </div>
-
-<!-- for fun facts gif -->
-
 
 <!-- for sad truth -->
  <div id="st">
@@ -339,8 +358,7 @@ function topFunction() {
   <p>makan</P>
 </div>
 
-
-
-
-</body>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
