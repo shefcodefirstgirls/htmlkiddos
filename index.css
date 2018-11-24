@@ -131,48 +131,20 @@ li {
 
 /*-- for fun fact --*/
 
-/*-- for fun fact gif --*/
-.fun_fact{
-      position: relative;
-      width: 33.333%;
-      height: 200px;
-      float: left;
-  }
+/* Create three equal columns that floats next to each other */
+.fct {
+    float: left;
+    width: 33.33%;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
 
-  .gif {
-      opacity: 1;
-      display: block;
-      width: 100%;
-      height: 250px;
-      transition: .5s ease;
-      backface-visibility: hidden;
-  }
+/* Clear floats after the columns */
+.ffs:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-  .middle1 {
-      transition: .5s ease;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-  }
-
-  .fun_fact:hover .image {
-      opacity: 0.3;
-  }
-
-  .fun_fact:hover .middle {
-      opacity: 1;
-  }
-
-  .text1 {
-      background-color: #4CAF50;
-      color: white;
-      font-size: 16px;
-      padding: 16px 32px;
-  }
 
 /*PENGUIN PICS*/
 .container {
