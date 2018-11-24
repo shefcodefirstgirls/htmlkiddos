@@ -131,19 +131,19 @@ li {
 
 /*-- for fun fact --*/
 
-/* Create three equal columns that floats next to each other */
-.fct {
-    float: left;
-    width: 33.33%;
-    height: 300px; /* Should be removed. Only for demonstration */
-}
+    /* Create three equal columns that floats next to each other */
+    .fct {
+        float: left;
+        width: 33.33%;
+        height: 400px; /* Should be removed. Only for demonstration */
+    }
 
-/* Clear floats after the columns */
-.ffs:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+    /* Clear floats after the columns */
+    .ffs:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
 
 /*PENGUIN PICS*/
@@ -188,8 +188,6 @@ li {
     font-size: 16px;
     padding: 16px 32px;
 }
-
-
 
       /*-- to the top buttom --*/
 #myBtn {
