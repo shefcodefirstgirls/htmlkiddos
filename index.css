@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: powderblue;
+    background-color: lightblue;
    }
 
 li {
@@ -12,7 +12,7 @@ li {
 
    li a, .dropbtn {
        display: inline-block;
-       color: blue;
+       color: white;
        text-align: center;
        padding: 14px 16px;
        text-decoration: none;
@@ -113,6 +113,8 @@ li {
              width: 100%;
          }
      }
+
+     .column
      img {
          border-radius: 50%;
      }
@@ -123,6 +125,19 @@ li {
     width: 50%;
     }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+}
+/* Clear floats after image containers */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
     .savepenguins
       img {border-radius: 8px;}
 
