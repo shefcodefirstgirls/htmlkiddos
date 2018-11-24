@@ -56,7 +56,7 @@ li {
         width: 20px;
         text-align: center;
         text-decoration: none;
-        border-radius:50%;
+        border-radius: 70%;
        }
 
    .fa:hover
@@ -79,7 +79,7 @@ li {
    .fa-snapchat
        {
            background: #FFFF00;
-           color: white;
+           color: black;
        }
 
    .fa-pinterest
@@ -128,6 +128,8 @@ li {
 /*-- for donate penguin --*/
     .savepenguins
       img {border-radius: 8px;}
+
+/*-- for fun fact --*/
 
 /*-- for fun fact gif --*/
 .fun_fact{
