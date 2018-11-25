@@ -1,3 +1,47 @@
+body{
+  background-image: url("snow.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/*TOPIC*/
+    /* Container holding the image and the text */
+.topic {
+    position: relative;
+    text-align: center;
+    }
+
+    /* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+.hi {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px;
+    background-color: #AFEEEE;
+    border: 1px solid black;
+    opacity: 0.6;
+    }
+
+
+
+.hi2 {
+    font-family: "calibri";
+    font-size: 20px;
+    color: black;
+    background-color: #ffffff;
+      opacity: 0.6;
+
+    }
+
+
+
+
 /*NAVIGATION BAR*/
 ul {
     list-style-type: none;
@@ -88,6 +132,7 @@ li { float: left; }
  /*-- for FUN FACTS --*/
    .funfact {padding: 50px 0px 100px 0px;}
    .sadtruth{padding: 0px 0px 100px 0px;}
+   .ffs{padding: 50px 0px 0px 0px;}
    /* Create three equal columns that floats next to each other */
    .fct {
            float: left;
@@ -102,6 +147,11 @@ li { float: left; }
            content: "";
            display: table;
            clear: both;
+           }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+     @media screen and (max-width: 500px) {
+       .fct {width: 100%; }
            }
 
 
@@ -144,6 +194,11 @@ li { float: left; }
            color: white;
            font-size: 16px;
            padding: 16px 32px;
+          }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 500px) {
+        .container {width: 100%; }
           }
 
 
