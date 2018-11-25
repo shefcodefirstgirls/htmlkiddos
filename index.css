@@ -202,6 +202,10 @@ li { float: left; }
         .container {width: 100%; }
           }
 
+      @media screen and (max-width: 500px) {
+        .container1 {width: 100%; }
+          }
+
 
 /*-- for SAVE PENGUINS --*/
     .savepenguins{
