@@ -127,7 +127,6 @@ li { float: left; }
  /*-- for FUN FACTS --*/
    .funfact {padding: 50px 0px 100px 0px;}
    .sadtruth{padding: 0px 0px 100px 0px;}
-   .ffs{padding: 50px 0px 0px 0px;}
    /* Create three equal columns that floats next to each other */
    .fct {
            float: left;
