@@ -25,22 +25,17 @@ body{
     margin: 30px;
     background-color: #AFEEEE;
     border: 1px solid black;
-    opacity: 0.6;
+    opacity: 0.7;
     }
-
-
 
 .hi2 {
     font-family: "calibri";
     font-size: 20px;
     color: black;
     background-color: #ffffff;
-      opacity: 0.6;
+      opacity: 0.7;
 
     }
-
-
-
 
 /*NAVIGATION BAR*/
 ul {
@@ -48,7 +43,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: lightblue;
+    background-color: black;
    }
 
 li { float: left; }
