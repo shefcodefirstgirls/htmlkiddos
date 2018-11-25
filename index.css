@@ -92,8 +92,10 @@ li { float: left; }
            float: left;
            width: 33.33%;
            height: 400px;
+           text-align: justify;
+           text-align-last: center;
            }
-
+        p{padding:0px 15px 0px 15px;}
   /* Clear floats after the columns */
    .ffs:after {
            content: "";
