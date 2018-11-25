@@ -1,5 +1,5 @@
 body{
-  background-image: url("snow.jpg");
+  background-color: #11B0E5; /*background-image: url("snow3.jpg");*/
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -151,13 +151,21 @@ li { float: left; }
 
 
  /*for PENGUIN PICS*/
+ .container {
+         position: relative;
+         width: 25%;
+         height: 300px;
+         float: left;
+         }
 
-   .container {
-           position: relative;
-           width: 25%;
-           height: 300px;
-           float: left;
-           }
+         .container1 {
+                 position: relative;
+                 width: 33.33%;
+                 height: 300px;
+                 float: left;
+                 }
+                 .container1:hover .image { opacity: 0.3; }
+                 .container1:hover .middle { opacity: 1; }
 
    .image {
            opacity: 1;
@@ -181,7 +189,6 @@ li { float: left; }
            }
 
     .container:hover .image { opacity: 0.3; }
-
     .container:hover .middle { opacity: 1; }
 
     .text {
