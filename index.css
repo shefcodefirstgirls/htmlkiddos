@@ -86,7 +86,8 @@ li { float: left; }
          }
 
  /*-- for FUN FACTS --*/
-
+   .funfact {padding: 50px 0px 100px 0px;}
+   .sadtruth{padding: 0px 0px 100px 0px;}
    /* Create three equal columns that floats next to each other */
    .fct {
            float: left;
@@ -95,7 +96,7 @@ li { float: left; }
            text-align: justify;
            text-align-last: center;
            }
-        p{padding:0px 15px 0px 15px;}
+      p {  padding:0px 15px 0px 15px; }
   /* Clear floats after the columns */
    .ffs:after {
            content: "";
@@ -105,6 +106,7 @@ li { float: left; }
 
 
  /*for PENGUIN PICS*/
+
    .container {
            position: relative;
            width: 25%;
@@ -119,6 +121,7 @@ li { float: left; }
            height: 300px;
            transition: .5s ease;
            backface-visibility: hidden;
+           border-radius: 8px;
            }
 
     .middle {
@@ -145,7 +148,12 @@ li { float: left; }
 
 
 /*-- for SAVE PENGUINS --*/
-      .savepenguins
+    .savepenguins{
+          text-align: justify;
+          text-align-last: center;
+          padding: 400px 0px 100px 0px; /*why atas x jarak?*/
+          }
+
           img {border-radius: 8px;}
 
 
