@@ -132,7 +132,7 @@ li { float: left; }
    .fct {
            float: left;
            width: 33.33%;
-           height: 400px;
+           height: auto;
            text-align: justify;
            text-align-last: center;
            }
@@ -208,7 +208,6 @@ li { float: left; }
     .savepenguins{
           text-align: justify;
           text-align-last: center;
-          padding: 400px 0px 100px 0px; /*why atas x jarak?*/
           }
 
           img {border-radius: 8px;}
