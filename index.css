@@ -1,15 +1,15 @@
-body{
+body {
   background-color: #87CEEB; /*background-image: url("snow3.jpg");*/
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   background-image: url("winter.jpg");
-
-}
+     }
 
 h1{color:#191970;}
 
-/*TOPIC*/
+/* for HOME PAGE*/
+
     /* Container holding the image and the text */
 .topic {
     position: relative;
@@ -23,6 +23,7 @@ h1{color:#191970;}
     left: 50%;
     transform: translate(-50%, -50%);
     }
+
 .hi {
     font-size: 40px;
     font-weight: bold;
@@ -37,18 +38,18 @@ h1{color:#191970;}
     font-size: 20px;
     color: black;
     background-color: #ffffff;
-      opacity: 0.7;
-
+    opacity: 0.7;
     }
 
-/*NAVIGATION BAR*/
+/*FOR NAVIGATION BAR*/
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: black;
-   }
+    }
 
 li { float: left; }
 
@@ -90,16 +91,16 @@ li { float: left; }
 
    .dropdown:hover .dropdown-content {display: block;}
 
-    /*Social media*/
-    .fa {
-        float:right;
-        padding: 15px;
-        font-size: 30px;
-        width: 20px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 70%;
-        }
+/*for SOCIAL MEDIA*/
+.fa {
+     float:right;
+     padding: 15px;
+     font-size: 30px;
+     width: 20px;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 70%;
+     }
 
    .fa:hover { opacity: 0.7; }
 
@@ -119,93 +120,97 @@ li { float: left; }
          }
 
    .fa-pinterest {
-          background: #FF0000;
-          color: white;
+         background: #FF0000;
+         color: white;
          }
 
   .fa-instagram {
-          background: #FF00FF;
-          color: white;
+         background: #FF00FF;
+         color: white;
          }
 
- /*-- for FUN FACTS --*/
-   .funfact {padding: 50px 0px 100px 0px;}
-   .sadtruth{padding: 0px 0px 100px 0px;}
-   /* Create three equal columns that floats next to each other */
-   .fct {
-           float: left;
+/* for FUN FACTS */
 
-           grid-template-columns: auto auto auto auto;
-           grid-gap: 50px;
-           width: 32.0%;
-           height: auto;
-           text-align: justify;
-           text-align-last: center;
-           padding: 10px;
-           }
-      p {  padding:14px; }
-  /* Clear floats after the columns */
-   .ffs:after {
-           content: "";
-           display: table;
-           clear: both;
-           }
+.funfact {padding: 50px 0px 100px 0px;}
+.sadtruth{padding: 0px 0px 100px 0px;}
+
+   /* Create three equal columns that floats next to each other */
+ .fct {
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 50px;
+        width: 32.0%;
+        height: auto;
+        text-align: justify;
+        text-align-last: center;
+        padding: 10px;
+        }
+
+  p {  padding:14px; }
+
+   /* Clear floats after the columns */
+ .ffs:after {
+       content: "";
+       display: table;
+       clear: both;
+       }
 
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
      @media screen and (max-width: 500px) {
        .fct {width: 100%; }
-           }
+       }
 
 
- /*for PENGUIN PICS*/
+/*for PENGUIN PICS*/
  .container {
-         position: relative;
-         width: 25%;
-         height: 300px;
-         float: left;
-         }
+       position: relative;
+       width: 25%;
+       height: 300px;
+       float: left;
+       }
 
-         .container1 {
-                 position: relative;
-                 width: 33.33%;
-                 height: 300px;
-                 float: left;
-                 }
-                 .container1:hover .image { opacity: 0.3; }
-                 .container1:hover .middle { opacity: 1; }
+ .container1 {
+       position: relative;
+       width: 33.33%;
+       height: 300px;
+       float: left;
+       }
 
-   .image {
-           opacity: 1;
-           display: block;
-           width: 100%;
-           height: 300px;
-           transition: .5s ease;
-           backface-visibility: hidden;
-           border-radius: 8px;
-           }
+ .container1:hover .image { opacity: 0.3; }
+ .container1:hover .middle { opacity: 1; }
 
-    .middle {
-           transition: .5s ease;
-           opacity: 0;
-           position: absolute;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-           -ms-transform: translate(-50%, -50%);
-           text-align: center;
-           }
+ .image {
+       opacity: 1;
+       display: block;
+       width: 100%;
+       height: 300px;
+       transition: .5s ease;
+       backface-visibility: hidden;
+       border-radius: 8px;
+       }
 
-    .container:hover .image { opacity: 0.3; }
-    .container:hover .middle { opacity: 1; }
+.middle {
+       transition: .5s ease;
+       opacity: 0;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       text-align: center;
+       }
 
-    .text {
-           background-color: #4CAF50;
-           color: white;
-           font-size: 16px;
-           padding: 16px 32px;
-          }
+.container:hover .image { opacity: 0.3; }
+.container:hover .middle { opacity: 1; }
 
-        /* The Modal (background) */
+.text {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+      }
+
+    /* The Modal (background) */
     .modal {
             display: none;
             position: fixed;
@@ -326,12 +331,11 @@ li { float: left; }
 
 
 /*-- for SAVE PENGUINS --*/
-    .savepenguins{
-          text-align: justify;
-          text-align-last: center;
-          }
-
-          img {border-radius: 8px;}
+.savepenguins{
+        text-align: justify;
+        text-align-last: center;
+        }
+    img {border-radius: 8px;}
 
 
 /* FOR ABOUT US*/
