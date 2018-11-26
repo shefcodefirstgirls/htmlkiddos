@@ -102,49 +102,178 @@
     </div>
 
 <!--PENGUIN PICS-->
-        <div class="container">
-        <img src="happypenguin.jpg" alt="Happy penguin" class="image">
+<div class="gallery">
+     <div class="container">
+        <img src="happypenguin.jpg" alt="Happy penguin" onclick="openModal();currentSlide(1)" class="image">
           <div class="middle">
             <div class="text">Happy penguin</div>
           </div>
       </div>
       <div class="container">
-        <img src="angry-penguin.jpg" alt="Angry penguin" class="image">
+        <img src="angry-penguin.jpg" alt="Angry penguin" onclick="openModal();currentSlide(2)" class="image">
           <div class="middle">
             <div class="text">Angry penguin</div>
           </div>
       </div>
       <div class="container">
-        <img src="sad penguin.png" alt="Sad penguin" class="image">
+        <img src="sad penguin.png" alt="Sad penguin" onclick="openModal();currentSlide(3)"  class="image">
           <div class="middle">
             <div class="text">Sad penguin</div>
           </div>
       </div>
       <div class="container">
-        <img src="shypenguin.jpg" alt="Shy penguin" class="image">
+        <img src="shypenguin.jpg" alt="Shy penguin" onclick="openModal();currentSlide(4)" class="image">
           <div class="middle">
             <div class="text">Shy penguin</div>
           </div>
       </div>
 
       <div class="container1">
-        <img src="hey dude.jpg" alt="Hey dude" class="image">
+        <img src="hey dude.jpg" alt="Hey dude" onclick="openModal();currentSlide(5)" class="image">
           <div class="middle">
             <div class="text">Hey dude, whats up?</div>
           </div>
       </div>
       <div class="container1">
-        <img src="mama.jpg" alt="baby penguin" class="image">
+        <img src="mama.jpg" alt="baby penguin" onclick="openModal();currentSlide(6)"  class="image">
           <div class="middle">
             <div class="text">Mama, I want fooddd</div>
           </div>
       </div>
       <div class="container1">
-        <img src="believe.jpg" alt="Penguin try to fly" class="image">
+        <img src="believe.jpg" alt="Penguin tries to fly" onclick="openModal();currentSlide(7)" class="image">
           <div class="middle">
             <div class="text">I believe I can fly, oh wait but I can't !</div>
           </div>
       </div>
+</div>
+
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 7</div>
+          <img src="happypenguin.jpg" width="100%" height="700" >
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 7</div>
+          <img src="angry-penguin.jpg" width="100%" height="700">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 7</div>
+          <img src="sad penguin.png" width="100%" height="700">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 7</div>
+          <img src="shypenguin.jpg" width="100%" height="700">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 7</div>
+          <img src="hey dude.jpg" width="100%" height="700">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 7</div>
+          <img src="mama.jpg" width="100%" height="700">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 7</div>
+          <img src="believe.jpg" width="100%" height="700">
+        </div>
+
+      <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+        <div class="container">
+          <img class="demo" src="happypenguin.jpg" onclick="currentSlide(1)" alt="Happy penguin" width="100%" height="300">
+        </div>
+
+        <div class="container">
+          <img class="demo" src="angry-penguin.jpg" onclick="currentSlide(2)" alt="Angry penguin" width="100%" height="300">
+        </div>
+
+        <div class="container">
+          <img class="demo" src="sad penguin.png" onclick="currentSlide(3)" alt="Sad penguin" width="100%" height="300">
+        </div>
+
+        <div class="container">
+          <img class="demo" src="shypenguin.jpg" onclick="currentSlide(4)" alt="Shy penguin" width="100%" height="300">
+        </div>
+
+        <div class="container1">
+          <img class="demo" src="hey dude.jpg" onclick="currentSlide(5)" alt="Hey dude" width="100%" height="300">
+        </div>
+
+        <div class="container1">
+          <img class="demo" src="mama.jpg" onclick="currentSlide(6)" alt="Baby penguin" width="100%" height="300">
+        </div>
+
+        <div class="container1">
+          <img class="demo" src="believe.jpg" onclick="currentSlide(7)" alt="Penguin tries to fly" width="100%" height="300">
+        </div>
+      </div>
+    </div>
+
+
+          <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" activate", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " activate";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+
+
 
   <!--save penguin-->
 
