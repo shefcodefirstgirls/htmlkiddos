@@ -3,6 +3,8 @@ body{
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url("winter.jpg");
+
 }
 
 h1{color:#191970;}
@@ -132,12 +134,16 @@ li { float: left; }
    /* Create three equal columns that floats next to each other */
    .fct {
            float: left;
-           width: 33.33%;
+
+           grid-template-columns: auto auto auto auto;
+           grid-gap: 50px;
+           width: 32.0%;
            height: auto;
            text-align: justify;
            text-align-last: center;
+           padding: 10px;
            }
-      p {  padding:0px 15px 0px 15px; }
+      p {  padding:14px; }
   /* Clear floats after the columns */
    .ffs:after {
            content: "";
@@ -330,6 +336,7 @@ li { float: left; }
 
 /* FOR ABOUT US*/
   /* create three equal columns */
+
     .column {
          float: left;
          width: 33.33%;
@@ -356,7 +363,9 @@ li { float: left; }
        margin-right: auto;
        width: 50%;
       }
-
+      span {
+          background-color: red;
+      }
 
 /*-- to the TOP BUTTON --*/
 
